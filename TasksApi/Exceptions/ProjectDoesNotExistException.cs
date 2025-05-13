@@ -1,0 +1,1 @@
+public class ProjectDoesNotExistException(int projectId) : Exception($"Project with {projectId} does not exist");

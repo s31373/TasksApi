@@ -1,0 +1,1 @@
+public class TeamMemberDoesNotExistException(int teamMemberId) : Exception($"Team member with {teamMemberId} does not exist");
