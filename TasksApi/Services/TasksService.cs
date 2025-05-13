@@ -12,7 +12,7 @@ public class TasksService : ITasksService
         _repository = repository;
     }
 
-    public async Task<TeamMemberDetailsDto?> GetTeamMemberDetailsAsync(int id)
+    public async Task<TeamMemberDetailsDto> GetTeamMemberDetailsAsync(int id)
     {
         var teamMember = await _repository.GetTeamMember(id);
         if (teamMember is null)

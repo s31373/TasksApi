@@ -21,8 +21,6 @@ public class TasksController : ControllerBase
         try
         {
             var task = await _tasksService.GetTeamMemberDetailsAsync(id);
-            if (task == null)
-                return NotFound();
             return Ok(task);
         }
         catch (TeamMemberDoesNotExistException)
